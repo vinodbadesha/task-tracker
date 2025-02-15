@@ -1,0 +1,57 @@
+POST http://localhost:4000/register/
+Content-Type: application/json
+
+{
+    "name": "mrnokia23",
+    "email": "mrnokia2025@gmail.com",
+    "password": "9876543210",
+    "created_at": "null"
+}
+
+###
+
+POST http://localhost:4000/login/
+Content-Type: application/json
+
+{
+    "name": "mrnokia23",
+    "password": "9876543210"
+}
+
+###
+
+GET http://localhost:4000/tasks/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibXJub2tpYTIzIiwiaWF0IjoxNzM5NjMzMDA1fQ.JqgwMfr7Ih2YcEI3sUw_Hf_z0AKJJAyVcfUGdAoZak4
+
+###
+
+POST http://localhost:4000/tasks/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibXJub2tpYTIzIiwiaWF0IjoxNzM5NjMzMDA1fQ.JqgwMfr7Ih2YcEI3sUw_Hf_z0AKJJAyVcfUGdAoZak4
+
+{
+    "title": "Sell bike",
+    "description": "Do not sell it for cheaper price. negotiate for a reasonable price",
+    "status": "in progress",
+    "due_date": "null",
+    "user_id": 1
+}
+
+###
+
+PUT http://localhost:4000/tasks/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibXJub2tpYTIzIiwiaWF0IjoxNzM5NjMzMDA1fQ.JqgwMfr7Ih2YcEI3sUw_Hf_z0AKJJAyVcfUGdAoZak4
+
+{
+    "title": "get chips and coke",
+    "description": "Dont forget", 
+    "status": "in progress",
+    "due_date": "null"
+}
+
+###
+
+DELETE http://localhost:4000/tasks/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibXJub2tpYTIzIiwiaWF0IjoxNzM5NjMzMDA1fQ.JqgwMfr7Ih2YcEI3sUw_Hf_z0AKJJAyVcfUGdAoZak4
