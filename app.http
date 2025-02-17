@@ -34,8 +34,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibXJub2tpY
     "title": "Sell bike",
     "description": "Do not sell it for cheaper price. negotiate for a reasonable price",
     "status": "in progress",
-    "due_date": "null",
-    "user_id": 1
+    "dueDate": "null",
+    "userId": 1
 }
 
 ###
